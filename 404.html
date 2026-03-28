@@ -7,11 +7,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta http-equiv="cache-control" content="no-cache">
-      
-  <!--Redirect if JS is disabled-->
-<noscript>
-   <meta http-equiv="refresh" content="0; url=https://adspacestudios.com" />
-</noscript>
+  <script>
+    (function() {
+      var newUrl = "https://digital.adspace.me" 
+        + window.location.pathname 
+        + window.location.search 
+        + window.location.hash;
+
+      window.location.replace(newUrl);
+    })();
+  </script>
+
+  <!-- Fallback (no JS) -->
+  <noscript>
+    <meta http-equiv="refresh" content="0;url=https://digital.adspace.me">
+  </noscript>
       
 <!-- Stylesheet -->      
 <link rel="preload" as="font" href="/fonts/Custom.TTF" type="font/TTF" crossorigin="anonymous">
